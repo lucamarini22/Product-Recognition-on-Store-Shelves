@@ -1,0 +1,97 @@
+Treshold colore ottimali per HSV Correlation con i seguenti parametri:
+#dimension of a single cell of the accumulator array
+ACC_ARRAY_CELL_DIMENSION_1 = 30
+ACC_ARRAY_CELL_DIMENSION_2 = 30
+
+
+# Parameters to tune
+# minimum number of votes to consider G as a valid point
+MIN_VOTES = 1
+#treshold passed to the Matching function
+# MATCHING_TRESHOLD = 0.55
+
+# distance to merge two bounding boxes
+DISTANCE_BOUNDING_BOXES_TRESHOLD = 50
+
+# color parameters
+COLOR_DIFF_IN_SINGLE_CHANNEL_TRES_FIRST_BINS = 66#60#65.9#70#75#80#92 
+COLOR_DIFF_IN_SINGLE_CHANNEL_TRES_FIRST_DIFFERENCE = 145
+
+# number of bins for the color problem
+N_BINS_ON_WIDTH = 3
+
+M_BINS_ON_HEIGHT = 4
+
+# if the num of no good cells is <= of this number then I take the bounding box
+MAX_NUM_OF_NO_GOOD_CELLS = 2
+
+# treshold for keypoints parameters
+MIN_TRESHOLD = 0.2
+MAX_TRESHOLD = 0.65#0.53#0.50
+STEP_SIZE = 0.05
+
+MIN_NUM_OF_KEYPOINTS_IN_SCENE = 125#15#8#15#10#15 #10
+
+ERROR = 40
+
+# amount of cutting (1/N) on top and of bottom of of the images when considering HSV Hist Correlation
+CUT_FACTOR_FOR_HIST_CORR = 7
+
+num errori = box mancate + box trovate in più
+
+- modello 0 (nesquik normale) -> TRES_MINIMUM_HISTOGRAM_CORR = 166; box_mancate = 0; box_in_più = 1; max(circa) = 256
+
+- modello 1 (choco krave blu) -> TRES_MINIMUM_HISTOGRAM_CORR = 70; box_mancate = 0; box_in_più = 0; max(circa) =
+
+- modello 2 (gallo) -> TRES_MINIMUM_HISTOGRAM_CORR = 110; box_mancate = 1 (per keypoints non trovato); box_in_più = 1; max(circa) = 256
+
+- modello 3 (mostriciattolo) -> TRES_MINIMUM_HISTOGRAM_CORR = 195; box_mancate = 0; box_in_più = 0; max(circa) = 347
+
+- modello 4 ("biscotto") -> TRES_MINIMUM_HISTOGRAM_CORR = 68; box_mancate = 0; box_in_più = 0; max(circa) = 150
+
+- modello 5 (nesquik normale 2) -> TRES_MINIMUM_HISTOGRAM_CORR = ; box_mancate = 1 (per keypoints); box_in_più = 12; max(circa) = 100
+
+- modello 6 (nesquik duo senza barra rosa) -> TRES_MINIMUM_HISTOGRAM_CORR = 76; box_mancate = 0; box_in_più = 0; max(circa) = 75 (non compare mai nelle ard scenes quindi non lo trova mai)
+
+
+- modello 7 (coco pops marrone) -> TRES_MINIMUM_HISTOGRAM_CORR = 111; box_mancate = 0; box_in_più = 1 (ne trova una stra mini in altezza => potremmo scartare bounding box troppo piccole in altezza rispetto allo scaffale); max(circa) = 142
+
+- modello 8 (coco pops rosso) -> TRES_MINIMUM_HISTOGRAM_CORR = 26; box_mancate = 1 (per keypoints); box_in_più = 0; max(circa) = 53
+
+- modello 9 (K blu) -> TRES_MINIMUM_HISTOGRAM_CORR = 11; box_mancate = 2; box_in_più = 11 (kellogs di altri colori soprattutto); max(circa) = 18
+
+- modello 10 (K marrone) -> TRES_MINIMUM_HISTOGRAM_CORR = 18; box_mancate = 2 (per keypoints); box_in_più = 14 (kellogs di altri colori soprattutto); max(circa) = 32
+
+- modello 11 (choco krave arancio) -> TRES_MINIMUM_HISTOGRAM_CORR = 59; box_mancate = 0; box_in_più = 1 (un chcoc krave blu); max(circa) = 68
+
+- modello 12 (fitness arancio) -> TRES_MINIMUM_HISTOGRAM_CORR = 14; box_mancate = 3 (per keypoints); box_in_più = 5 (altri colori fitness); max(circa) = 16
+
+
+- modello 13 (fitness blu) -> TRES_MINIMUM_HISTOGRAM_CORR = 14; box_mancate = 3/4(per keypoints e una perchè scartata dal colore ma abbastanza in ombra quindi ci può anche stare); box_in_più = 0; max(circa) =
+
+- modello 14 (cane) -> TRES_MINIMUM_HISTOGRAM_CORR = 70 ; box_mancate = 0; box_in_più = 0; max(circa) = 129 (il cane dà zero problemi)
+
+- modello 15 (coco pops giallo) -> TRES_MINIMUM_HISTOGRAM_CORR = 75; box_mancate = 0; box_in_più = 0; max(circa) = 129
+
+- modello 16 (miel pops 1) -> TRES_MINIMUM_HISTOGRAM_CORR = 150; box_mancate = 3 tagliate a metà e 4 normali(per keypoints e alcune perchè scartate dall'algoritmo del colore precedente); box_in_più = 0; max(circa) = 177
+
+- modello 17 (miel pops 2) -> TRES_MINIMUM_HISTOGRAM_CORR = 57; box_mancate = 2 (entrambe perchè eliminate dal color algorithm); box_in_più = 4 (le scambia con altre miel pops, addirittura pensa che l'altro tipo di miel pops sia meglio); max(circa) = 65
+
+- modello 18 (jordans marrrone) -> TRES_MINIMUM_HISTOGRAM_CORR = 60; box_mancate = 0; box_in_più = 0; max(circa) = 96
+
+
+- modello 19 (jordans blu) -> TRES_MINIMUM_HISTOGRAM_CORR = 43; box_mancate = 0; box_in_più = 4 (trova i jordans marroni, molti con corr > di quelli blu addirittura); max(circa) = 65
+
+- modello 20 (k rosso) -> TRES_MINIMUM_HISTOGRAM_CORR = 31; box_mancate = 4 (tutte per keypoints); box_in_più = 6 (kellogs azzurre); max(circa) = 46
+
+- modello 21 (ragazzini) -> TRES_MINIMUM_HISTOGRAM_CORR = 22; box_mancate = 0; box_in_più = 0; max(circa) = 55
+
+- modello 22 (cheerios viola) -> TRES_MINIMUM_HISTOGRAM_CORR = 120; box_mancate = 2 (non ho capito di preciso perchè, le scarta prima del colore, nello shelf 0 della scena 1 -> penso perchè eliminiamo box troppo piccole, da modificare il valore di "ERROR" in modo da renderlo indipendente); box_in_più = 0; max(circa) = 205
+
+- modello 23 (k blu 2) -> TRES_MINIMUM_HISTOGRAM_CORR = 10.5; box_mancate = 3/4; box_in_più = 13(altri colori kellogs); max(circa) = 18
+
+- modello 24 (fitness rosa) -> TRES_MINIMUM_HISTOGRAM_CORR = 58; box_mancate = 0; box_in_più = 0; max(circa) = 58 (ho messo il TRES_MINIMUM_HISTOGRAM_CORR=max perchè questa non compare mai nelle hard scenes)
+
+
+- modello 25 (coco pops rosso 2) -> TRES_MINIMUM_HISTOGRAM_CORR = 150; box_mancate = 0; box_in_più = 0; max(circa) = 103 (ho messo il TRES_MINIMUM_HISTOGRAM_CORR > max perchè questa non compare mai nelle hard scenes)
+- modello 26 (nesquik duo con barra rosa in fondo) -> TRES_MINIMUM_HISTOGRAM_CORR = 64; box_mancate = 0; box_in_più = 6(altri tipi nesquik -> si potrebbe migliorare andando a riconsiderare anche i BINS più in alto e più in basso nell'algoritmo del colore, perchè ora non li considero); max(circa) = 
