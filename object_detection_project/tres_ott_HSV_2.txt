@@ -1,0 +1,95 @@
+#dimension of a single cell of the accumulator array
+ACC_ARRAY_CELL_DIMENSION_1 = 30
+ACC_ARRAY_CELL_DIMENSION_2 = 30
+
+
+# Parameters to tune
+# minimum number of votes to consider G as a valid point
+MIN_VOTES = 1
+#treshold passed to the Matching function
+# MATCHING_TRESHOLD = 0.55
+
+# distance to merge two bounding boxes
+DISTANCE_BOUNDING_BOXES_TRESHOLD = 50
+
+# color parameters
+COLOR_DIFF_IN_SINGLE_CHANNEL_TRES_FIRST_BINS = 79#66#60#65.9#70#75#80#92 
+COLOR_DIFF_IN_SINGLE_CHANNEL_TRES_FIRST_DIFFERENCE = 145
+
+# number of bins for the color problem
+N_BINS_ON_WIDTH = 3
+
+M_BINS_ON_HEIGHT = 4
+
+# if the num of no good cells is <= of this number then I take the bounding box
+MAX_NUM_OF_NO_GOOD_CELLS = 3#2
+
+# treshold for keypoints parameters
+MIN_TRESHOLD = 0.2
+MAX_TRESHOLD = 0.65#0.53#0.50
+STEP_SIZE = 0.05
+
+MIN_NUM_OF_KEYPOINTS_IN_SCENE = 125#15#8#15#10#15 #10
+
+# ERROR = 60#40
+
+# amount of cutting (1/N) on top and of bottom of of the images when considering HSV Hist Correlation
+CUT_FACTOR_FOR_HIST_CORR = 7
+
+num errori = box mancate + box trovate in più
+
+- modello 0 (nesquik normale) -> TRES_MINIMUM_HISTOGRAM_CORR = 169; box_mancate = 0; box_in_più = 1; max(circa) = 
+
+- modello 1 (choco krave blu) -> TRES_MINIMUM_HISTOGRAM_CORR = 71.5; box_mancate = 0; box_in_più = 0; max(circa) =
+
+- modello 2 (gallo) -> TRES_MINIMUM_HISTOGRAM_CORR = ; box_mancate = ; box_in_più = ; max(circa) =
+
+- modello 3 (mostriciattolo) -> TRES_MINIMUM_HISTOGRAM_CORR = ; box_mancate = ; box_in_più = ; max(circa) =
+
+- modello 4 ("biscotto") -> TRES_MINIMUM_HISTOGRAM_CORR = ; box_mancate = ; box_in_più = ; max(circa) =
+
+- modello 5 (nesquik normale 2) -> TRES_MINIMUM_HISTOGRAM_CORR = 70.5; box_mancate = 1 (per keypoints); box_in_più = 10; max(circa) =
+
+- modello 6 (nesquik duo senza barra rosa) -> TRES_MINIMUM_HISTOGRAM_CORR = ; box_mancate = ; box_in_più = ; max(circa) =
+
+
+- modello 7 (coco pops marrone) -> TRES_MINIMUM_HISTOGRAM_CORR = ; box_mancate = ; box_in_più = ; max(circa) =
+
+- modello 8 (coco pops rosso) -> TRES_MINIMUM_HISTOGRAM_CORR = ; box_mancate = ; box_in_più = ; max(circa) =
+
+- modello 9 (K blu) -> TRES_MINIMUM_HISTOGRAM_CORR = ; box_mancate = ; box_in_più = ; max(circa) =
+
+- modello 10 (K marrone) -> TRES_MINIMUM_HISTOGRAM_CORR = ; box_mancate = ; box_in_più = ; max(circa) =
+
+- modello 11 (choco krave arancio) -> TRES_MINIMUM_HISTOGRAM_CORR = ; box_mancate = ; box_in_più = ; max(circa) =
+
+- modello 12 (fitness arancio) -> TRES_MINIMUM_HISTOGRAM_CORR = ; box_mancate = ; box_in_più = ; max(circa) =
+
+- modello 13 (fitness blu) -> TRES_MINIMUM_HISTOGRAM_CORR = ; box_mancate = ; box_in_più = ; max(circa) =
+
+- modello 14 (cane) -> TRES_MINIMUM_HISTOGRAM_CORR = ; box_mancate = ; box_in_più = ; max(circa) =
+
+- modello 15 (coco pops giallo) -> TRES_MINIMUM_HISTOGRAM_CORR = ; box_mancate = ; box_in_più = ; max(circa) =
+
+- modello 16 (miel pops 1) -> TRES_MINIMUM_HISTOGRAM_CORR = ; box_mancate = ; box_in_più = ; max(circa) =TRES_MINIMUM_HISTOGRAM_CORR = ; box_mancate = ; box_in_più = ; max(circa) =
+
+- modello 17 (miel pops 2) -> TRES_MINIMUM_HISTOGRAM_CORR = ; box_mancate = ; box_in_più = ; max(circa) =
+
+- modello 18 (jordans marrrone) -> TRES_MINIMUM_HISTOGRAM_CORR = ; box_mancate = ; box_in_più = ; max(circa) =
+
+
+- modello 19 (jordans blu) -> TRES_MINIMUM_HISTOGRAM_CORR = ; box_mancate = ; box_in_più = ; max(circa) =
+
+- modello 20 (k rosso) -> TRES_MINIMUM_HISTOGRAM_CORR = ; box_mancate = ; box_in_più = ; max(circa) =
+
+- modello 21 (ragazzini) -> TRES_MINIMUM_HISTOGRAM_CORR = ; box_mancate = ; box_in_più = ; max(circa) =
+
+- modello 22 (cheerios viola) -> TRES_MINIMUM_HISTOGRAM_CORR = 110; box_mancate = 0; box_in_più = 0; max(circa) = 
+
+- modello 23 (k blu 2) -> TRES_MINIMUM_HISTOGRAM_CORR = ; box_mancate = ; box_in_più = ; max(circa) =
+
+- modello 24 (fitness rosa) -> TRES_MINIMUM_HISTOGRAM_CORR = ; box_mancate = ; box_in_più = ; max(circa) =
+
+- modello 25 (coco pops rosso 2) -> TRES_MINIMUM_HISTOGRAM_CORR = ; box_mancate = ; box_in_più = ; max(circa) =
+
+- modello 26 (nesquik duo con barra rosa in fondo) -> TRES_MINIMUM_HISTOGRAM_CORR = ; box_mancate = ; box_in_più = ; max(circa) =
