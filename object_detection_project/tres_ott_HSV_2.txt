@@ -42,7 +42,7 @@ num errori = box mancate + box trovate in più
 
 - modello 1 (choco krave blu) -> TRES_MINIMUM_HISTOGRAM_CORR = 71.5; box_mancate = 0; box_in_più = 0; max(circa) =
 
-- modello 2 (gallo) -> TRES_MINIMUM_HISTOGRAM_CORR = ; box_mancate = ; box_in_più = ; max(circa) =
+- modello 2 (gallo) -> TRES_MINIMUM_HISTOGRAM_CORR = 110; box_mancate = ; box_in_più = ; max(circa) =
 
 - modello 3 (mostriciattolo) -> TRES_MINIMUM_HISTOGRAM_CORR = ; box_mancate = ; box_in_più = ; max(circa) =
 
