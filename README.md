@@ -1,5 +1,6 @@
 # Product Recognition on Store Shelves
 
+
 ### Description
 You can read the task description [here](https://github.com/lucamarini22/Product-Recognition-on-Store-Shelves/blob/main/res/problem_description.pdf).
 
@@ -19,3 +20,8 @@ Download and run [this jupyter notebook](https://github.com/lucamarini22/Product
 
 ### Extra
 If you want to visualize additional information such as plots of intermediate steps of the whole process, then download and run [this jupyter notebook](https://github.com/lucamarini22/Product-Recognition-on-Store-Shelves/blob/main/Product_Recognition_on_Store_Shelves.ipynb).
+
+### Team
+
+- [Luca Marini](https://github.com/lucamarini22) 
+- [Nicholas Baraghini](https://github.com/NicholasBaraghini) 
