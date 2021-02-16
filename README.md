@@ -2,7 +2,7 @@
 
 
 ### Step A - Multiple Product Detection
-- Download and run [this jupyter notebook](https://github.com/lucamarini22/Product-Recognition-on-Store-Shelves/blob/main/object_detection_project/stepA.ipynb)
+- Download and run [this jupyter notebook](https://github.com/lucamarini22/Product-Recognition-on-Store-Shelves/blob/main/object_detection_project/stepA.ipynb).
 
 
 ### Step B - Multiple Instance Detection
