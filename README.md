@@ -5,7 +5,7 @@
 You can read the task description [here](https://github.com/lucamarini22/Product-Recognition-on-Store-Shelves/blob/main/res/problem_description.pdf).
 
 ### Report
-You can read our report [here]().
+You can read our report [here](https://github.com/lucamarini22/Product-Recognition-on-Store-Shelves/blob/main/res/report.pdf).
 
 ### Step A - Multiple Product Detection
 See the results in [this jupyter notebook](https://github.com/lucamarini22/Product-Recognition-on-Store-Shelves/blob/main/stepA.ipynb). Or download and run it!
