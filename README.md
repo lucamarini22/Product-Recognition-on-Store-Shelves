@@ -22,6 +22,11 @@ See the results in [this jupyter notebook](https://github.com/lucamarini22/Produ
 
 ![result example in Step C](https://github.com/lucamarini22/Product-Recognition-on-Store-Shelves/blob/main/res/img_result_example/example_step_C.png?raw=true)
 
+### Packages
+`cv2 4.4.0`
+`numpy 1.19.2`
+`matplotlib 3.3.2`
+
 
 ### Extra
 - If you want to visualize additional information such as plots of intermediate steps of the whole process, then download and run [this jupyter notebook](https://github.com/lucamarini22/Product-Recognition-on-Store-Shelves/blob/main/Product_Recognition_on_Store_Shelves.ipynb).
