@@ -23,11 +23,11 @@ See the results in [this jupyter notebook](https://github.com/lucamarini22/Produ
 ![result example in Step C](https://github.com/lucamarini22/Product-Recognition-on-Store-Shelves/blob/main/res/img_result_example/example_step_C.png?raw=true)
 
 ### Packages versions
-`cv2 4.4.0`
+`cv2: 4.4.0`
 
-`numpy 1.19.2`
+`numpy: 1.19.2`
 
-`matplotlib 3.3.2`
+`matplotlib: 3.3.2`
 
 
 ### Extra
